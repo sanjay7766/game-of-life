@@ -7,6 +7,6 @@ Node('qthrm') {
     }
    
        stage('archiveartifacts'){
-        archiveArtifacts artifacts: 'gameoflife-web/target/*.war', followSymlinks: false
+        archiveArtifacts artifacts: 'gameoflife-web/*.war', followSymlinks: false
     }
 }
