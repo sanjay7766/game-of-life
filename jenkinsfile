@@ -5,10 +5,8 @@ Node('qthrm') {
     stage('build') {
         sh 'mvn clean package'
     }
-    stage('testresults'){
-
-    }
-    stage('archiveartifacts'){
+   
+       stage('archiveartifacts'){
         archiveArtifacts artifacts: 'gameoflife-web/target/*.war', followSymlinks: false
     }
 }
